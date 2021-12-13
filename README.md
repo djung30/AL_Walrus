@@ -1,6 +1,6 @@
 # AL_Walrus
 
-Walrus
+Walrus:
 Joshua Yagupsky, Daniel Jung, Ethan Lam
 
 # ALTester
