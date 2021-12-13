@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 public class OrderedArrayList{
+
   private ArrayList<Integer> _data;
   //Default constructor
   public OrderedArrayList(){
@@ -10,28 +11,31 @@ public class OrderedArrayList{
     return _data.toString();
   }
   //Add method: adds just before the first element that is larger
-  public void addLinear(Integer newVal){
+  public boolean addLinear(Integer newVal){
+  	if(size()==0){
+  		_data.add(newVal);
+  		}
     for(int i = 0; i < size(); i++){
       if(_data.get(i) > newVal){
         _data.add(i,newVal);
+        return true;
       }
+    }
+    _data.add(newVal);
+    return true;
   }
- }
- 
   //Get method
-  public Integer get(int index){
-    return _data.get(index);
+  public Integer get (int i){
+    return _data.get(i);
   }
-  
   public int size(){
     return _data.size();
   }
   
-  public Integer remove( int i ){
+    public Integer remove( int i ){
 	_data.remove(i);
 	return 1;
   }
-  
   public static void main(String[] args) {
     OrderedArrayList bob = new OrderedArrayList();
     System.out.println(bob);
@@ -43,4 +47,3 @@ public class OrderedArrayList{
     System.out.println(bob);
   }
 }
-
