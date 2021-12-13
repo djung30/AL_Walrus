@@ -14,6 +14,7 @@ Joshua Yagupsky, Daniel Jung, Ethan Lam
 * OrderedArrayList(): default constructor that initializes _data
 Methods: 
 * addLinear: adds a value into the ArrayList by iterating through the array until it reaches a value larger than the input, then it will add the input before the larger value and shift the other values to the right.
+* addBinary: continuosly halves the array according to the whether the midpoint is larger or lesser than the input to find the appropriate index. 
 * toString: Returns the array in a readable format.
 * get: returns the value of the inputed index from the ArrayList.
 * size: returns the size of the ArrayList.
