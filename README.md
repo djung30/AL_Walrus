@@ -10,12 +10,15 @@ Joshua Yagupsky, Daniel Jung, Ethan Lam
 4. If a number is not greater than the previous one, then return false.
 5. If all the numbers have been checked and none are less than the one before them, return true.
 
-#OrderedArrayList
-* toString
-1. Returns the array in a readable format.
+# OrderedArrayList
+* OrderedArrayList(): default constructor that initializes _data
+Methods: 
+* addLinear: adds a value into the ArrayList by iterating through the array until it reaches a value larger than the input, then it will add the input before the larger value and shift the other values to the right.
+* toString: Returns the array in a readable format.
+* get: returns the value of the inputed index from the ArrayList.
+* size: returns the size of the ArrayList.
+* remove: removes the value in the inputed index from the ArrayList.
 
-* add
-1. 
 
 
 
